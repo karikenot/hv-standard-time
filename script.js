@@ -2,7 +2,22 @@ const days = ["Desember", "Januari", "Februari", "Maret", "April", "Mei", "Juni"
 const d = new Date();
 let date = d.getHours();
 let month = days[d.getDay()];
-let hour = d.getMinutes();
-let minute = d.getSeconds();
 document.getElementById("hvdate").innerHTML = "Tanggal: " + (date - 1) + " " + month + " " + "2073";
-document.getElementById("hvtime").innerHTML = "Pukul: " + hour + ":" + minute
+
+let hour = d.getMinutes(); // hourcal artinya calculated hour
+hourCal = hour / 2.5
+let num = hourCal;
+let hourNod = Math.trunc(num); //hournod itu hourcal yang sudah dihapus desimalnya
+
+function startTime() {
+    let minute = d.getSeconds();
+    hourNod = checkTime(hourNod);
+    minute = checkTime(minute);
+    document.getElementById("hvtime").innerHTML = "Pukul: " + hourNod + ":" + minute;
+    setTimeout(startTime, 1000);
+}
+  
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  //nambahin nol nilai digit 1
+    return i;
+}
