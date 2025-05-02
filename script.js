@@ -9,13 +9,11 @@ hourCal = hour / 2.5
 let num = hourCal;
 let hourNod = Math.trunc(num); //hournod itu hourcal yang sudah dihapus desimalnya
 
-function startTime() {
-    let minute = d.getSeconds();
-    hourNod = checkTime(hourNod);
-    minute = checkTime(minute);
-    document.getElementById("hvtime").innerHTML = "Pukul: " + hourNod + ":" + minute;
-    setTimeout(startTime, 1000);
-}
+let minute = d.getSeconds();
+hourNod = checkTime(hourNod);
+minute = checkTime(minute);
+document.getElementById("hvtime").innerHTML = "Pukul: " + hourNod + ":" + minute;
+setTimeout(startTime, 1000);
   
 function checkTime(i) {
     if (i < 10) {i = "0" + i};  //nambahin nol nilai digit 1
