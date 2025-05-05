@@ -1,5 +1,5 @@
 function startTime() {
-const days = ["Desember", "Januari", "Februari", "Maret", "April", "Mei", "Juni"];
+const days = ["Juli", "Cleonus", "Atrestus", "Agustus", "September", "Oktober", "November"]; // "Desember", "Januari", "Februari", "Maret", "April", "Mei", "Juni"
 const d = new Date();
 let date = d.getUTCHours();
 let month = days[d.getDay()];
