@@ -3,7 +3,7 @@ const days = ["Desember", "Januari", "Februari", "Maret", "April", "Mei", "Juni"
 const d = new Date();// "Juli", "Cleonus", "Atrestus", "Agustus", "September", "Oktober", "November"
 let date = d.getUTCHours();
 let month = days[d.getDay()];
-document.getElementById("hvdate").innerHTML = "Tanggal: " + (date + 7) + " " + month + " " + "207";
+document.getElementById("hvdate").innerHTML = "Tanggal: " + (date + 7) + " " + month + " " + "2074";
 
 let hour = d.getMinutes(); // hourcal artinya calculated hour
 hourCal = hour / 2.5
