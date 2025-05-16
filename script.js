@@ -20,3 +20,9 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};  //nambahin nol nilai digit 1
     return i;
 }
+
+function timepic() {
+    if (h = 12) {
+        document.getElementById('timepic').src=''
+    }
+}
