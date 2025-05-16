@@ -23,6 +23,6 @@ function checkTime(i) {
 
 function timepic() {
     if (h = 12) {
-        document.getElementById('timepic').src=''
+        document.getElementById('timepic').src='/timepic/hvtime02851 12.png'
     }
 }
