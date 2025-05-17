@@ -14,12 +14,6 @@ h = checkTime(h);
 m = checkTime(m);
 document.getElementById("hvtime").innerHTML = "Pukul: " + h + ":" + m;
 setTimeout(startTime, 1000);
-}
-
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  //nambahin nol nilai digit 1
-    return i;
-}
 
 if( h == 1) {
     document.getElementById('timepic').src='timepic/hvtime1.png';
@@ -70,3 +64,11 @@ if( h == 1) {
 }  else {
     document.getElementById('timepic').src='timepic/hvtime24.png';
 }
+
+}
+
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  //nambahin nol nilai digit 1
+    return i;
+}
+
