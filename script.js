@@ -3,7 +3,7 @@ const days = ["Desember", "Januari", "Februari", "Maret", "April", "Mei", "Juni"
 const d = new Date();// "Juli", "Cleonus", "Atrestus", "Agustus", "September", "Oktober", "November"
 let date = d.getUTCHours();
 let month = days[d.getDay()];
-document.getElementById("hvdate").innerHTML = "Tanggal: " + (date + 7) + " " + month + " " + "2074";
+document.getElementById("hvdate").innerHTML = (date + 7) + " " + month + " " + "2074";
 
 let hour = d.getMinutes(); // hourcal artinya calculated hour
 hourCal = hour / 2.5
@@ -12,7 +12,7 @@ let h = Math.trunc(hourCal); //h itu hourcal yang sudah dihapus desimalnya
 let m = d.getSeconds();
 h = checkTime(h);
 m = checkTime(m);
-document.getElementById("hvtime").innerHTML = "Pukul: " + h + ":" + m;
+document.getElementById("hvtime").innerHTML = h + ":" + m;
 setTimeout(startTime, 1000);
 
 if( h == 1) {
@@ -65,6 +65,18 @@ if( h == 1) {
     document.getElementById('timepic').src='timepic/hvtime24.png';
 }
 
+let sevilleH = h - 9;
+let pilsetaH = h + 3;
+let centeriumH = h + 11;
+
+sevilleH = fixWorldClock(sevilleH);
+pilsetaH = fixWorldClock(pilsetaH);
+centeriumH = fixWorldClock(centeriumH);
+
+document.getElementById("seville").innerHTML = sevilleH + ":" + m;
+document.getElementById("pilseta").innerHTML = pilsetaH + ":" + m;
+document.getElementById("centerium").innerHTML = centeriumH + ":" + m;
+
 }
 
 function checkTime(i) {
@@ -72,3 +84,8 @@ function checkTime(i) {
     return i;
 }
 
+function fixWorldClock(i) {
+    if (i < 0) {i = i * (-1) + 12};
+    if (i > 24) {i = i - 24}
+    return i;
+}

@@ -1,7 +1,0 @@
-:root {
-    --a1: url();
-}
-
-img {
-    content: var(--a1);
-}
