@@ -1,24 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HVTime</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>HV Time</title>
 </head>
-<body onload="startTime()">
-    <h2>Waktu Standar Holyverse</h2>
+<body onload="startTime()" class="bg-stone-900 font-[Anonymous_Pro] text-gray-200 content-center">
+  <nav aria-label="Breadcrumb" class="w-100% flex justify-center py-4 gap-10 content-center">
+  <img src="image-36.png" alt="" class="h-10">
+  </nav>
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap- m-5">
+  <div class="rounded bg-stone-800 flex justify-center items-center md:col-span-2">
+    <img src="timepic/hvtime1.png" id="timepic" class="rounded">
+  </div>
+  <div class="rounded bg-stone-800 p-5 content-center">
+    <p id="hvtime" class="text-6xl text-extrabold"></p>
     <p id="hvdate"></p>
-    <p><i>Waktu dikalibrasikan menggunakan WIB</i></p>
-    <p id="hvtime"></p>
-    <p>RL(Real life) N(Negfik) <br> <br>
-        
+  </div>
+  <div class="rounded bg-stone-800 p-5">
+      <p>RL(Real life) N(Negfik) <br>
         1 detik(RL) = 1 Menit(N) <br>
-        1 Menit(RL) = 1 Jam(N) / 2.5 <br>
+        1 Menit(RL) = 1 Jam(N) x 2.5 <br>
         1 jam(RL) = 1 Hari(N) <br>
         6 jam(RL) = 1 Minggu(N) <br>
         1 hari(RL) = 1 Bulan(N) <br>
-        2 Minggu(RL) = 1 Tahun(N) <br></p>
-    <script src="script.js"></script>
-    <p>Dibuat oleh kari ganteng</p>
+        2 Minggu(RL) = 1 Tahun(N) <br>
+      </p>
+    </div>
+    <div class="md:col-span-2"><div class="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
+  <div class="rounded bg-stone-800 p-2">
+    <p class="text-2xl text-bold">Seville</p><p class="text-stone-500">Herlica</p>
+    <p id="seville" class="text-2xl"></p>
+  </div>
+  <div class="rounded bg-stone-800 p-2">
+    <p class="text-2xl text-bold">Pilseta</p><p class="text-stone-500">Azlania</p>
+    <p id="pilseta" class="text-2xl"></p>
+  </div>
+  <div class="rounded bg-stone-800 p-2">
+    <p class="text-2xl text-bold">Centerium</p><p class="text-stone-500">Sweriova</p>
+    <p id="centerium" class="text-2xl"></p>
+  </div>
+</div></div>
+  </div>
+  <footer class="bg-gray-100 dark:bg-stone-800">
+  <div class="relative mx-auto max-w-screen-xl px-6 px-8 pt-24">
+    <div class="flex justify-center">
+        <img class="h-12" src="image-36.png" alt="">
+        </div>
+
+        <p
+          class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left dark:text-gray-400">
+          HV Time merupakan Website berfungsi sebagai konversi waktu dunia nyata menjadi waktu di Holyverse secara realtime <br><br>- Dibuat oleh Orang Ganteng -
+        </p>
+      </div>
+
+      <ul
+        class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
+      >
+        <li>
+          <a
+            class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+            href="https://discord.com/invite/ncmjkuz"
+          >
+            Discord
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+            href="https://github.com/karikenot/hv-standard-time"
+          >
+            Github
+          </a>
+        </li>
+
+        <li>
+          <a
+            class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+            href="https://krizknt.icu"
+          >
+            About
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p class="mt-12 text-center text-sm text-gray-500 lg:text-right dark:text-gray-400">
+      Copyright &copy; 2025. All rights reserved.
+    </p>
+  </div>
+</footer>
+  <script src="script.js"></script>
 </body>
 </html>
