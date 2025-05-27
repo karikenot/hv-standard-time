@@ -31,54 +31,56 @@ window.hGlobal = h;
 
 }
 
-if( hGlobal == 1) {
-    document.getElementById('timepic').src='timepic/hvtime1.png';
-} else if (hGlobal == 2) {
-    document.getElementById('timepic').src='timepic/hvtime2.png';
-} else if (hGlobal == 3) {
-    document.getElementById('timepic').src='timepic/hvtime3.png';
-} else if (hGlobal == 4) {
-    document.getElementById('timepic').src='timepic/hvtime4.png';
-} else if (hGlobal == 5) {
-    document.getElementById('timepic').src='timepic/hvtime5.png';
-} else if (hGlobal == 6) {
-    document.getElementById('timepic').src='timepic/hvtime6.png';
-} else if (hGlobal == 7) {
-    document.getElementById('timepic').src='timepic/hvtime7.png';
-} else if (hGlobal == 8) {
-    document.getElementById('timepic').src='timepic/hvtime8.png';
-} else if (hGlobal == 9) {
-    document.getElementById('timepic').src='timepic/hvtime9.png';
-} else if (hGlobal == 10) {
-    document.getElementById('timepic').src='timepic/hvtime10.png';
-} else if (hGlobal == 11) {
-    document.getElementById('timepic').src='timepic/hvtime11.png';
-} else if (hGlobal == 12) {
-    document.getElementById('timepic').src='timepic/hvtime12.png';
-} else if (hGlobal == 13) {
-    document.getElementById('timepic').src='timepic/hvtime13.png';
-} else if (hGlobal == 14) {
-    document.getElementById('timepic').src='timepic/hvtime14.png';
-} else if (hGlobal == 15) {
-    document.getElementById('timepic').src='timepic/hvtime15.png';
-} else if (hGlobal == 16) {
-    document.getElementById('timepic').src='timepic/hvtime16.png';
-} else if (hGlobal == 17) {
-    document.getElementById('timepic').src='timepic/hvtime17.png';
-} else if (hGlobal == 18) {
-    document.getElementById('timepic').src='timepic/hvtime18.png';
-} else if (hGlobal == 19) {
-    document.getElementById('timepic').src='timepic/hvtime19.png';
-} else if (hGlobal == 20) {
-    document.getElementById('timepic').src='timepic/hvtime20.png';
-} else if (hGlobal == 21) {
-    document.getElementById('timepic').src='timepic/hvtime21.png';
-} else if (hGlobal == 22) {
-    document.getElementById('timepic').src='timepic/hvtime22.png';
-} else if (hGlobal == 23) {
-    document.getElementById('timepic').src='timepic/hvtime23.png';
-}  else {
-    document.getElementById('timepic').src='timepic/hvtime24.png';
+function picChange() {
+    if( hGlobal == 1) {
+        document.getElementById('timepic').src='timepic/hvtime1.png';
+    } else if (hGlobal == 2) {
+        document.getElementById('timepic').src='timepic/hvtime2.png';
+    } else if (hGlobal == 3) {
+        document.getElementById('timepic').src='timepic/hvtime3.png';
+    } else if (hGlobal == 4) {
+        document.getElementById('timepic').src='timepic/hvtime4.png';
+    } else if (hGlobal == 5) {
+        document.getElementById('timepic').src='timepic/hvtime5.png';
+    } else if (hGlobal == 6) {
+        document.getElementById('timepic').src='timepic/hvtime6.png';
+    } else if (hGlobal == 7) {
+        document.getElementById('timepic').src='timepic/hvtime7.png';
+    } else if (hGlobal == 8) {
+        document.getElementById('timepic').src='timepic/hvtime8.png';
+    } else if (hGlobal == 9) {
+        document.getElementById('timepic').src='timepic/hvtime9.png';
+    } else if (hGlobal == 10) {
+        document.getElementById('timepic').src='timepic/hvtime10.png';
+    } else if (hGlobal == 11) {
+        document.getElementById('timepic').src='timepic/hvtime11.png';
+    } else if (hGlobal == 12) {
+        document.getElementById('timepic').src='timepic/hvtime12.png';
+    } else if (hGlobal == 13) {
+        document.getElementById('timepic').src='timepic/hvtime13.png';
+    } else if (hGlobal == 14) {
+        document.getElementById('timepic').src='timepic/hvtime14.png';
+    } else if (hGlobal == 15) {
+        document.getElementById('timepic').src='timepic/hvtime15.png';
+    } else if (hGlobal == 16) {
+        document.getElementById('timepic').src='timepic/hvtime16.png';
+    } else if (hGlobal == 17) {
+        document.getElementById('timepic').src='timepic/hvtime17.png';
+    } else if (hGlobal == 18) {
+        document.getElementById('timepic').src='timepic/hvtime18.png';
+    } else if (hGlobal == 19) {
+        document.getElementById('timepic').src='timepic/hvtime19.png';
+    } else if (hGlobal == 20) {
+        document.getElementById('timepic').src='timepic/hvtime20.png';
+    } else if (hGlobal == 21) {
+        document.getElementById('timepic').src='timepic/hvtime21.png';
+    } else if (hGlobal == 22) {
+        document.getElementById('timepic').src='timepic/hvtime22.png';
+    } else if (hGlobal == 23) {
+        document.getElementById('timepic').src='timepic/hvtime23.png';
+    }  else {
+        document.getElementById('timepic').src='timepic/hvtime24.png';
+    }
 }
 
 function checkTime(i) {
