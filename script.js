@@ -1,4 +1,4 @@
-h = null;
+let h = null;
 
 function startTime() {
 const days = ["Desember", "Januari", "Februari", "Maret", "April", "Mei", "Juni"]; // "Desember", "Januari", "Februari", "Maret", "April", "Mei", "Juni"
