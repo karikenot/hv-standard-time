@@ -1,9 +1,9 @@
 function startTime() {
-const days = ["Juli", "Cleonus", "Atrestus", "Agustus", "September", "Oktober", "November"]; // "Desember", "Januari", "Februari", "Maret", "April", "Mei", "Juni"
+const days = ["Desember", "Januari", "Februari", "Maret", "April", "Mei", "Juni"]; // "Desember", "Januari", "Februari", "Maret", "April", "Mei", "Juni"
 const d = new Date();// "Juli", "Cleonus", "Atrestus", "Agustus", "September", "Oktober", "November"
 let date = d.getUTCHours();
 let month = days[d.getDay()];
-document.getElementById("hvdate").innerHTML = (date + 7) + " " + month + " " + "2075";
+document.getElementById("hvdate").innerHTML = (date + 7) + " " + month + " " + "2076";
 
 let hour = d.getMinutes(); // hourcal artinya calculated hour
 hourCal = hour / 2.5
